@@ -10,6 +10,7 @@ import {
 import { XrplDefinitions } from './enums/xrpl-definitions'
 import { coreTypes } from './types'
 import { bytesToHex } from '@xrplf/isomorphic/utils'
+import { nativeAsset } from './nativeasset'
 
 const {
   signingData,
@@ -150,4 +151,5 @@ export {
   XrplDefinitionsBase,
   DEFAULT_DEFINITIONS,
   coreTypes,
+  nativeAsset,
 }
