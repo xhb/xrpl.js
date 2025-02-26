@@ -8,18 +8,18 @@ import {
   isValidXAddress,
   xAddressToClassicAddress,
   encodeSeed,
-} from 'ripple-address-codec'
+} from '@xhbmygod/ripple-address-codec'
 import {
   encodeForSigning,
   encodeForMultisigning,
   encode,
-} from 'ripple-binary-codec'
+} from '@xhbmygod/ripple-binary-codec'
 import {
   deriveAddress,
   deriveKeypair,
   generateSeed,
   sign,
-} from 'ripple-keypairs'
+} from '@xhbmygod/ripple-keypairs'
 
 import ECDSA from '../ECDSA'
 import { ValidationError } from '../errors'

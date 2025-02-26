@@ -2,7 +2,7 @@
  * Codec class
  */
 
-import { base58xrp, BytesCoder } from '@scure/base'
+import { base58xrp, BytesCoder } from '@xhbmygod/scure-base'
 import { sha256 } from '@xrplf/isomorphic/sha256'
 
 import { arrayEqual, concatArgs, ByteArray } from './utils'

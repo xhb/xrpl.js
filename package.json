@@ -1,5 +1,5 @@
 {
-  "name": "xrpl.js",
+  "name": "@xhbmygod/xrpl.js",
   "private": true,
   "scripts": {
     "analyze": "lerna run analyze --stream",
@@ -15,11 +15,11 @@
   },
   "dependencies": {
     "@xrplf/isomorphic": "file:packages/isomorphic",
-    "@xrplf/secret-numbers": "file:packages/secret-numbers",
-    "ripple-address-codec": "file:packages/ripple-address-codec",
-    "ripple-binary-codec": "file:packages/ripple-binary-codec",
-    "ripple-keypairs": "file:packages/ripple-keypairs",
-    "xrpl": "file:packages/xrpl"
+    "@xhbmygod/secret-numbers": "file:packages/secret-numbers",
+    "@xhbmygod/ripple-address-codec": "file:packages/ripple-address-codec",
+    "@xhbmygod/ripple-binary-codec": "file:packages/ripple-binary-codec",
+    "@xhbmygod/ripple-keypairs": "file:packages/ripple-keypairs",
+    "@xhbmygod/xrpl": "file:packages/xrpl"
   },
   "devDependencies": {
     "@types/chai": "^4.2.21",

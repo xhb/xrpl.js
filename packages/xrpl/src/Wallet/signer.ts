@@ -1,8 +1,8 @@
 import { bytesToHex } from '@xrplf/isomorphic/utils'
 import { BigNumber } from 'bignumber.js'
-import { decodeAccountID } from 'ripple-address-codec'
-import { decode, encode, encodeForSigning } from 'ripple-binary-codec'
-import { verify } from 'ripple-keypairs'
+import { decodeAccountID } from '@xhbmygod/ripple-address-codec'
+import { decode, encode, encodeForSigning } from '@xhbmygod/ripple-binary-codec'
+import { verify } from '@xhbmygod/ripple-keypairs'
 
 import { ValidationError } from '../errors'
 import { Signer } from '../models/common'

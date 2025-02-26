@@ -9,5 +9,5 @@ module.exports = {
     '<rootDir>/test/integration',
     '<rootDir>/test/fixtures',
   ],
-  displayName: 'xrpl.js',
+  displayName: '@xhbmygod/xrpl.js',
 }

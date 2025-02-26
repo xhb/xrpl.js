@@ -1,6 +1,6 @@
 import { assert } from 'chai'
-import { encode } from 'ripple-binary-codec'
-import { sign } from 'ripple-keypairs'
+import { encode } from '@xhbmygod/ripple-binary-codec'
+import { sign } from '@xhbmygod/ripple-keypairs'
 
 import {
   Wallet,

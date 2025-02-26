@@ -1,4 +1,8 @@
-import { deriveAddress, deriveKeypair, generateSeed } from 'ripple-keypairs'
+import {
+  deriveAddress,
+  deriveKeypair,
+  generateSeed,
+} from '@xhbmygod/ripple-keypairs'
 
 import {
   entropyToSecret,

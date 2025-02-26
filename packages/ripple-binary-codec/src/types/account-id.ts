@@ -3,7 +3,7 @@ import {
   encodeAccountID,
   isValidXAddress,
   xAddressToClassicAddress,
-} from 'ripple-address-codec'
+} from '@xhbmygod/ripple-address-codec'
 import { Hash160 } from './hash-160'
 import { hexToBytes } from '@xrplf/isomorphic/utils'
 

@@ -1,4 +1,4 @@
-import { isValidClassicAddress } from 'ripple-address-codec'
+import { isValidClassicAddress } from '@xhbmygod/ripple-address-codec'
 
 import type { Client } from '../client'
 import { XRPLFaucetError } from '../errors'
@@ -148,13 +148,18 @@ export async function requestFunding(
   if (!hostname) {
     throw new XRPLFaucetError('No faucet hostname could be derived')
   }
+
   const pathname = options.faucetPath ?? getDefaultFaucetPath(hostname)
-  const response = await fetch(`https://${hostname}${pathname}`, {
+  const faucetUrl = hostname.startsWith('http')
+    ? `${hostname}${pathname}`
+    : `https://${hostname}${pathname}`
+  const response = await fetch(faucetUrl, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify(postBody),
+    signal: AbortSignal.timeout(600000),
   })
 
   // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment -- it can be anything
